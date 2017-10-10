@@ -1,0 +1,7 @@
+cd ~/homework-3
+
+gcc -c -Wall -Wextra main.c process_file.c modify_tree.c tree.c
+gcc main.o process_file.o modify_tree.o tree.o -o homework-3
+valgrind --tool=memcheck --leak-check=full ./homework-3 test
+
+
